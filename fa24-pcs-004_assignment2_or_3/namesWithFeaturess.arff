@@ -1,0 +1,114 @@
+@relation namesWithFeatures
+
+@attribute Name {Amira,Kawkab,Faheem,Faisal,Adam,Omar,Layla,Dawud,Bashir,Afeefah,Asim,Ismail,Hussein,Bushra,Nida,Iman,Hala,Naeema,Fareed,Shakir,Ghaliya,BadrUddin,Aneesa,Sharifa,Aakifa,Ubaid,Husna,Arif,Safa,Faris,Aamir,Farida,Shahid,Huda,Mujtaba,Eisa,Nadia,Afra,Sharif,Aziza,Umair,Ahmad,Irfan,Shuaib,Amal,Murad,Furqan,Abida,Muneeb,Khadijah,Abeer,Areej,Habib,Urwa,Aida,Afia,Adeeb,Noor,Iffat,Nafisa,Farhan,Aatika,Burhan,Maleeha,Munira,Zeenat,Maymouna,Saadiya,Inaya,Firdous,Khalida,Luqman,Almas,Qamar,Uqbah,Falak,AbdulAlim,Arshad,Azra,Amjad,Khawlah,Akram,Hadiyya,Asiyah,Hashim,Jamila,Ajmal,Anas,Adeela,Aqeel,Raniya,Munir,Maha,Imran,Asma,Hamza,Bilal,Anees,Amina}
+@attribute LengthOfName numeric
+@attribute NameStartingWithVowel numeric
+@attribute NameEndingWithVowel numeric
+@attribute NumberOfVowelsInName numeric
+@attribute StartingCharacterIsAtEven numeric
+@attribute StartingCharacterIsAtOdd numeric
+@attribute LengthOfNameIsEven numeric
+@attribute LengthOfNameIsOdd numeric
+@attribute Output {-,+}
+
+@data
+Amira,5,1,1,3,0,1,0,1,-
+Kawkab,6,0,0,2,0,1,1,0,+
+Faheem,6,0,0,3,1,0,1,0,+
+Faisal,6,0,0,3,1,0,1,0,+
+Adam,4,1,0,2,0,1,1,0,-
+Omar,4,1,0,2,0,1,1,0,-
+Layla,5,0,1,2,1,0,0,1,+
+Dawud,5,0,0,2,1,0,0,1,+
+Bashir,6,0,0,2,1,0,1,0,+
+Afeefah,7,1,0,4,0,1,0,1,-
+Asim,4,1,0,2,0,1,1,0,-
+Ismail,6,1,0,3,0,1,1,0,-
+Hussein,7,0,0,3,1,0,0,1,+
+Bushra,6,0,1,2,1,0,1,0,+
+Nida,4,0,1,2,1,0,1,0,+
+Iman,4,1,0,2,0,1,1,0,-
+Hala,4,0,1,2,1,0,1,0,+
+Naeema,6,0,1,4,1,0,1,0,+
+Fareed,6,0,0,3,1,0,1,0,+
+Shakir,6,0,0,2,0,1,1,0,-
+Ghaliya,7,0,1,3,0,1,0,1,-
+BadrUddin,9,0,0,3,1,0,0,1,+
+Aneesa,6,1,1,4,0,1,1,0,-
+Sharifa,7,0,1,3,0,1,0,1,-
+Aakifa,6,1,1,4,0,1,1,0,+
+Ubaid,5,1,0,3,0,1,0,1,-
+Husna,5,0,1,2,1,0,0,1,+
+Arif,4,1,0,2,0,1,1,0,-
+Safa,4,0,1,2,0,1,1,0,+
+Faris,5,0,0,2,1,0,0,1,+
+Aamir,5,1,0,3,0,1,0,1,+
+Farida,6,0,1,3,1,0,1,0,+
+Shahid,6,0,0,2,0,1,1,0,-
+Huda,4,0,1,2,1,0,1,0,+
+Mujtaba,7,0,1,3,0,1,0,1,+
+Eisa,4,1,1,3,0,1,1,0,+
+Nadia,5,0,1,3,1,0,0,1,+
+Afra,4,1,1,2,0,1,1,0,-
+Sharif,6,0,0,2,0,1,1,0,-
+Aziza,5,1,1,3,0,1,0,1,-
+Umair,5,1,0,3,0,1,0,1,-
+Ahmad,5,1,0,2,0,1,0,1,-
+Irfan,5,1,0,2,0,1,0,1,-
+Shuaib,6,0,0,3,0,1,1,0,-
+Amal,4,1,0,2,0,1,1,0,-
+Murad,5,0,0,2,0,1,0,1,+
+Furqan,6,0,0,2,1,0,1,0,+
+Abida,5,1,1,3,0,1,0,1,-
+Muneeb,6,0,0,3,0,1,1,0,+
+Khadijah,8,0,0,3,0,1,1,0,-
+Abeer,5,1,0,3,0,1,0,1,-
+Areej,5,1,0,3,0,1,0,1,-
+Habib,5,0,0,2,1,0,0,1,+
+Urwa,4,1,1,2,0,1,1,0,-
+Aida,4,1,1,3,0,1,1,0,+
+Afia,4,1,1,3,0,1,1,0,-
+Adeeb,5,1,0,3,0,1,0,1,-
+Noor,4,0,0,2,1,0,1,0,+
+Iffat,5,1,0,2,0,1,0,1,-
+Nafisa,6,0,1,3,1,0,1,0,+
+Farhan,6,0,0,2,1,0,1,0,+
+Aatika,6,1,1,4,0,1,1,0,+
+Burhan,6,0,0,2,1,0,1,0,+
+Maleeha,7,0,1,4,0,1,0,1,+
+Munira,6,0,1,3,0,1,1,0,+
+Zeenat,6,0,0,3,1,0,1,0,+
+Maymouna,8,0,1,4,0,1,1,0,+
+Saadiya,7,0,1,4,0,1,0,1,+
+Inaya,5,1,1,3,0,1,0,1,-
+Firdous,7,0,0,3,1,0,0,1,+
+Khalida,7,0,1,3,0,1,0,1,-
+Luqman,6,0,0,2,1,0,1,0,+
+Almas,5,1,0,2,0,1,0,1,-
+Qamar,5,0,0,2,0,1,0,1,+
+Abeer,5,1,0,3,0,1,0,1,-
+Uqbah,5,1,0,2,0,1,0,1,-
+Falak,5,0,0,2,1,0,0,1,+
+AbdulAlim,9,1,0,4,0,1,0,1,-
+Arshad,6,1,0,2,0,1,1,0,-
+Azra,4,1,1,2,0,1,1,0,-
+Amjad,5,1,0,2,0,1,0,1,-
+Khawlah,7,0,0,2,0,1,0,1,-
+Akram,5,1,0,2,0,1,0,1,-
+Hadiyya,7,0,1,3,1,0,0,1,+
+Asiyah,6,1,0,3,0,1,1,0,-
+Hashim,6,0,0,2,1,0,1,0,+
+Jamila,6,0,1,3,1,0,1,0,+
+Ajmal,5,1,0,2,0,1,0,1,-
+Anas,4,1,0,2,0,1,1,0,-
+Adeela,6,1,1,4,0,1,1,0,-
+Aqeel,5,1,0,3,0,1,0,1,-
+Raniya,6,0,1,3,1,0,1,0,+
+Munir,5,0,0,2,0,1,0,1,+
+Maha,4,0,1,2,0,1,1,0,+
+Imran,5,1,0,2,0,1,0,1,-
+Asma,4,1,1,2,0,1,1,0,-
+Hamza,5,0,1,2,1,0,0,1,+
+Bilal,5,0,0,2,1,0,0,1,+
+Anees,5,1,0,3,0,1,0,1,-
+Amina,5,1,1,3,0,1,0,1,-

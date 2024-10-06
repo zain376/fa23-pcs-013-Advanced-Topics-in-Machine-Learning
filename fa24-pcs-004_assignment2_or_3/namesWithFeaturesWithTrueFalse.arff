@@ -1,0 +1,114 @@
+@relation namesWithFeatures
+
+@attribute Name {Amira,Kawkab,Faheem,Faisal,Adam,Omar,Layla,Dawud,Bashir,Afeefah,Asim,Ismail,Hussein,Bushra,Nida,Iman,Hala,Naeema,Fareed,Shakir,Ghaliya,BadrUddin,Aneesa,Sharifa,Aakifa,Ubaid,Husna,Arif,Safa,Faris,Aamir,Farida,Shahid,Huda,Mujtaba,Eisa,Nadia,Afra,Sharif,Aziza,Umair,Ahmad,Irfan,Shuaib,Amal,Murad,Furqan,Abida,Muneeb,Khadijah,Abeer,Areej,Habib,Urwa,Aida,Afia,Adeeb,Noor,Iffat,Nafisa,Farhan,Aatika,Burhan,Maleeha,Munira,Zeenat,Maymouna,Saadiya,Inaya,Firdous,Khalida,Luqman,Almas,Qamar,Uqbah,Falak,AbdulAlim,Arshad,Azra,Amjad,Khawlah,Akram,Hadiyya,Asiyah,Hashim,Jamila,Ajmal,Anas,Adeela,Aqeel,Raniya,Munir,Maha,Imran,Asma,Hamza,Bilal,Anees,Amina}
+@attribute LengthOfName numeric
+@attribute NameStartingWithVowel numeric
+@attribute NameEndingWithVowel numeric
+@attribute NumberOfVowelsInName numeric
+@attribute StartingCharacterIsAtEven numeric
+@attribute StartingCharacterIsAtOdd numeric
+@attribute LengthOfNameIsEven numeric
+@attribute LengthOfNameIsOdd numeric
+@attribute Output {TRUE,FALSE}
+
+@data
+Amira,5,1,1,3,0,1,0,1,TRUE
+Kawkab,6,0,0,2,0,1,1,0,FALSE
+Faheem,6,0,0,3,1,0,1,0,FALSE
+Faisal,6,0,0,3,1,0,1,0,FALSE
+Adam,4,1,0,2,0,1,1,0,TRUE
+Omar,4,1,0,2,0,1,1,0,TRUE
+Layla,5,0,1,2,1,0,0,1,FALSE
+Dawud,5,0,0,2,1,0,0,1,FALSE
+Bashir,6,0,0,2,1,0,1,0,FALSE
+Afeefah,7,1,0,4,0,1,0,1,TRUE
+Asim,4,1,0,2,0,1,1,0,TRUE
+Ismail,6,1,0,3,0,1,1,0,TRUE
+Hussein,7,0,0,3,1,0,0,1,FALSE
+Bushra,6,0,1,2,1,0,1,0,FALSE
+Nida,4,0,1,2,1,0,1,0,FALSE
+Iman,4,1,0,2,0,1,1,0,TRUE
+Hala,4,0,1,2,1,0,1,0,FALSE
+Naeema,6,0,1,4,1,0,1,0,FALSE
+Fareed,6,0,0,3,1,0,1,0,FALSE
+Shakir,6,0,0,2,0,1,1,0,TRUE
+Ghaliya,7,0,1,3,0,1,0,1,TRUE
+BadrUddin,9,0,0,3,1,0,0,1,FALSE
+Aneesa,6,1,1,4,0,1,1,0,TRUE
+Sharifa,7,0,1,3,0,1,0,1,TRUE
+Aakifa,6,1,1,4,0,1,1,0,FALSE
+Ubaid,5,1,0,3,0,1,0,1,TRUE
+Husna,5,0,1,2,1,0,0,1,FALSE
+Arif,4,1,0,2,0,1,1,0,TRUE
+Safa,4,0,1,2,0,1,1,0,FALSE
+Faris,5,0,0,2,1,0,0,1,FALSE
+Aamir,5,1,0,3,0,1,0,1,FALSE
+Farida,6,0,1,3,1,0,1,0,FALSE
+Shahid,6,0,0,2,0,1,1,0,TRUE
+Huda,4,0,1,2,1,0,1,0,FALSE
+Mujtaba,7,0,1,3,0,1,0,1,FALSE
+Eisa,4,1,1,3,0,1,1,0,FALSE
+Nadia,5,0,1,3,1,0,0,1,FALSE
+Afra,4,1,1,2,0,1,1,0,TRUE
+Sharif,6,0,0,2,0,1,1,0,TRUE
+Aziza,5,1,1,3,0,1,0,1,TRUE
+Umair,5,1,0,3,0,1,0,1,TRUE
+Ahmad,5,1,0,2,0,1,0,1,TRUE
+Irfan,5,1,0,2,0,1,0,1,TRUE
+Shuaib,6,0,0,3,0,1,1,0,TRUE
+Amal,4,1,0,2,0,1,1,0,TRUE
+Murad,5,0,0,2,0,1,0,1,FALSE
+Furqan,6,0,0,2,1,0,1,0,FALSE
+Abida,5,1,1,3,0,1,0,1,TRUE
+Muneeb,6,0,0,3,0,1,1,0,FALSE
+Khadijah,8,0,0,3,0,1,1,0,TRUE
+Abeer,5,1,0,3,0,1,0,1,TRUE
+Areej,5,1,0,3,0,1,0,1,TRUE
+Habib,5,0,0,2,1,0,0,1,FALSE
+Urwa,4,1,1,2,0,1,1,0,TRUE
+Aida,4,1,1,3,0,1,1,0,FALSE
+Afia,4,1,1,3,0,1,1,0,TRUE
+Adeeb,5,1,0,3,0,1,0,1,TRUE
+Noor,4,0,0,2,1,0,1,0,FALSE
+Iffat,5,1,0,2,0,1,0,1,TRUE
+Nafisa,6,0,1,3,1,0,1,0,FALSE
+Farhan,6,0,0,2,1,0,1,0,FALSE
+Aatika,6,1,1,4,0,1,1,0,FALSE
+Burhan,6,0,0,2,1,0,1,0,FALSE
+Maleeha,7,0,1,4,0,1,0,1,FALSE
+Munira,6,0,1,3,0,1,1,0,FALSE
+Zeenat,6,0,0,3,1,0,1,0,FALSE
+Maymouna,8,0,1,4,0,1,1,0,FALSE
+Saadiya,7,0,1,4,0,1,0,1,FALSE
+Inaya,5,1,1,3,0,1,0,1,TRUE
+Firdous,7,0,0,3,1,0,0,1,FALSE
+Khalida,7,0,1,3,0,1,0,1,TRUE
+Luqman,6,0,0,2,1,0,1,0,FALSE
+Almas,5,1,0,2,0,1,0,1,TRUE
+Qamar,5,0,0,2,0,1,0,1,FALSE
+Abeer,5,1,0,3,0,1,0,1,TRUE
+Uqbah,5,1,0,2,0,1,0,1,TRUE
+Falak,5,0,0,2,1,0,0,1,FALSE
+AbdulAlim,9,1,0,4,0,1,0,1,TRUE
+Arshad,6,1,0,2,0,1,1,0,TRUE
+Azra,4,1,1,2,0,1,1,0,TRUE
+Amjad,5,1,0,2,0,1,0,1,TRUE
+Khawlah,7,0,0,2,0,1,0,1,TRUE
+Akram,5,1,0,2,0,1,0,1,TRUE
+Hadiyya,7,0,1,3,1,0,0,1,FALSE
+Asiyah,6,1,0,3,0,1,1,0,TRUE
+Hashim,6,0,0,2,1,0,1,0,FALSE
+Jamila,6,0,1,3,1,0,1,0,FALSE
+Ajmal,5,1,0,2,0,1,0,1,TRUE
+Anas,4,1,0,2,0,1,1,0,TRUE
+Adeela,6,1,1,4,0,1,1,0,TRUE
+Aqeel,5,1,0,3,0,1,0,1,TRUE
+Raniya,6,0,1,3,1,0,1,0,FALSE
+Munir,5,0,0,2,0,1,0,1,FALSE
+Maha,4,0,1,2,0,1,1,0,FALSE
+Imran,5,1,0,2,0,1,0,1,TRUE
+Asma,4,1,1,2,0,1,1,0,TRUE
+Hamza,5,0,1,2,1,0,0,1,FALSE
+Bilal,5,0,0,2,1,0,0,1,FALSE
+Anees,5,1,0,3,0,1,0,1,TRUE
+Amina,5,1,1,3,0,1,0,1,TRUE
